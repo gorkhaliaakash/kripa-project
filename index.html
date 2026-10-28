@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KRIPA | Tech & Creative Hub</title>
+  <style>
+    /* 1. Body & Dark Theme Setup */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 2. Header & Banner */
+    header {
+      text-align: center;
+      padding: 20px 10px 10px 10px;
+    }
+
+    h1 {
+      color: #38bdf8;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      color: #94a3b8;
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    /* 3. Navigation Bar */
+    .nav {
+      background-color: #1e293b;
+      padding: 12px 0;
+      text-align: center;
+      border-bottom: 2px solid #334155;
+    }
+
+    .nav a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin: 0 8px;
+      padding: 8px 14px;
+      border-radius: 20px;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    .nav a:hover {
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+
+    .nav a.active {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+
+    /* 4. Carousel Showcase */
+    .showcase-container {
+      max-width: 850px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .carousel-card {
+      position: relative;
+      background-color: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #334155;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .carousel-card img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      display: block;
+      opacity: 0.85;
+    }
+
+    /* Prev & Next Button Hover Fix */
+    .prev-btn, .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(15, 23, 42, 0.7);
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid #38bdf8;
+      transition: all 0.2s ease-in-out;
+      z-index: 10;
+    }
+
+    .prev-btn {
+      left: 15px;
+    }
+
+    .next-btn {
+      right: 15px;
+    }
+
+    .prev-btn:hover, .next-btn:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+
+    /* 5. Main Cards Container */
+    .container {
+      max-width: 750px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 22px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #38bdf8;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #38bdf8;
+      margin-top: 0;
+    }
+
+    .card p {
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    /* 6. Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #334155;
+      margin: 30px 0 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KRIPA'S CREATIVE HUB</h1>
+    <p class="tagline">Exploring Robotics, Web Design & Science Projects</p>
+    
+    <nav class="nav">
+      <a href="index.html" class="active">HOME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="downloads.html">DOWNLOADS</a>
+      <a href="about.html">ABOUT ME</a>
+      <a href="contact.html">CONTACT ME</a>
+    </nav>
+  </header>
+
+  <!-- Featured Project Carousel -->
+  <div class="showcase-container">
+    <div class="carousel-card">
+      <a href="#" class="prev-btn">❮</a>
+      <img src="https://picsum.photos/850/360?random=11" alt="Featured Tech Project">
+      <a href="#" class="next-btn">❯</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Welcome to My Tech Space!</h2>
+      <p>Hi everyone! I am Kripa. I built this website showcase to share my school science experiments, coding achievements, and robotics notes.</p>
+    </div>
+
+    <div class="card">
+      <h2>Latest Update: Solar Energy Model</h2>
+      <p>I recently finished my grade 9 science project on renewable energy resources! Check out the <strong>PROJECTS</strong> tab to see full details and diagrams.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>&copy; 2026 KRIPA'S CREATIVE HUB. Built with HTML & CSS.</p>
+  </footer>
+
+</body>
+</html>
